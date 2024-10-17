@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_migrate import Migrate
+from server.app import app, db
 
 from models import db
 

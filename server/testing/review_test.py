@@ -1,5 +1,12 @@
+import sys
+import os
+
+# Add the server directory to the path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
+
 from app import app, db
 from server.models import Customer, Item, Review
+from server.app import app, db
 
 
 class TestReview:
